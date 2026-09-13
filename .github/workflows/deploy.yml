@@ -1,4 +1,5 @@
 name: Deploy React App to GitHub Pages
+run-name: Deploy Adasa
 
 on:
   push:
