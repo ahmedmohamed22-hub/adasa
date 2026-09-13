@@ -8,14 +8,16 @@ import 'tailwindcss';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="post/:slug" element={<Article />} />
-        <Route path="about" element={<About />} />
-      </Route>
-    </Routes>
+    <BrowserRouter basename="/adasa">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="post/:slug" element={<Article />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
